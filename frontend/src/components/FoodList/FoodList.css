@@ -1,0 +1,24 @@
+.food-list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin: 20px auto;
+    overflow-x: scroll;
+}
+
+.food-list h2{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap:50px;
+}
+
+.food-list::-webkit-scrollbar{
+    display: none;
+}

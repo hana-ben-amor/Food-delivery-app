@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    
+}
+
+.navbar.logo{
+    width: 150px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none; /*to delete the dots in each li*/
+    gap: 20px;
+    color:#49557e ;
+    font-size: 18px;
+}
+
+
+.navbar-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar button{
+    background:transparent;
+    font-size: 16px;
+    color:#49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color:#fff4f2;
+
+}
+
+
+.navbar-menu .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-basket-icon{
+    position: relative;
+}
+
+.navbar-basket-icon .dot{
+    position: absolute;
+    background-color: tomato;
+    border-radius: 5px;
+    min-height: 10px;    
+    min-width:10px;
+    top: -8px;
+    right: -8px;
+}
