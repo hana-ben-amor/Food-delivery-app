@@ -3,7 +3,7 @@ import './Navbar.css'
 import {assets} from "../../assets/assets"
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
   // we will create a state variable for underline items in menu
   const[menu,setMenu]=useState("home")
@@ -12,10 +12,10 @@ const Navbar = () => {
     <div className='navbar'>
       <img src={assets.logo} alt="" className='logo' />
       <ul className="navbar-menu">
-          <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</li>
-          <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</li>
-          <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</li>
-          <li onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}>contact us</li>
+          <a href='#' onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</a>
+          <a href="#menu" onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</a>
+          <a href="#mobile-app" onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
+          <a href="#contact" onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}>contact us</a>
       </ul>
 
       <div className="navbar-right">
@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="dot"></div>
         </div>
 
-        <button>Sign in</button>
+        <button onClick={()=>setShowLogin(true)}>Sign in</button>
       </div>
     </div>
   )
