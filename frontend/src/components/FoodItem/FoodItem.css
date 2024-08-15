@@ -58,4 +58,18 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: rgba(46, 45, 45, 0.046);
+}
+
+.icons img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.add{
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50px;
 }
